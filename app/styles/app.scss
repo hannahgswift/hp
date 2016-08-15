@@ -1,0 +1,87 @@
+$good-green: #009f77;
+$light-mav: #e9dddd;
+
+@import "bulma";
+
+.nav {
+  align-items: center;
+  padding: 0 1rem;
+  background: $light-mav;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  background: $light-mav;
+}
+
+.section, .container, .footer {
+  background: transparent;
+}
+
+.level {
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+
+// .site-title {
+//   padding: 0;
+//   margin: 0;
+// }
+
+.button {
+  margin-left: 1rem;
+  padding: 0rem 0rem;
+  background: transparent;
+  border: none;
+}
+
+.section {
+  background-color: success;
+}
+
+
+.hero-body {
+  background: url('http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		// background-image: linear-gradient(to bottom right,#002f4b,gray);
+		opacity: .8;
+  }
+
+
+}
+
+
+// .app {
+//   background: #e9dddd;
+// }
+
+.giant {
+  font-size: 5rem;
+  font-weight: bold;
+  color: gray;
+  text-shadow: 0.3rem 0.3rem purple;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 1rem auto;
+}
+
+.shadow {
+  box-shadow: 0.5rem 0.5rem $good-green;
+}
