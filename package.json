@@ -44,5 +44,5 @@
     "ember-welcome-page": "^1.0.1",
     "liquid-fire": "0.24.1",
     "loader.js": "^4.0.1"
-  }
+    }
 }
