@@ -28,17 +28,17 @@
 
       <div class="nav-right nav-menu">
         <a class="nav-item button is-medium" href="#">
-      home
-    </a>
+          home
+        </a>
         <a class="nav-item button is-medium" href="#">
-      about
-    </a>
+          code
+        </a>
         <a class="nav-item button is-medium" href="#">
-      code
-    </a>
+          about
+        </a>
         <a class="nav-item button is-medium" href="#">
-      contact
-    </a>{{!-- <span class="nav-item">
+          contact
+        </a>{{!-- <span class="nav-item">
       <a class="button" >
         <span class="icon">
           <i class="fa fa-twitter"></i>
@@ -55,11 +55,23 @@
       </div>
     </nav>
   </div>
-  <section class="hero is-info is-large is-bold is-primary">
+  <section class="hero is-info is-large is-bold is-primary has-text-centered">
     <div class="hero-body">
-      <div class="content has-text-centered">
+      <div class="container has-text-centered">
+      <div class="row">
+        <div class="columns">
+          <div class="content column is-one-third">
+            <figure class="image is-square">
+              <img src="image/DSC_1778.jpg" alt="">
+            </figure>
+          </div>
+          <div class="column is-two-tirds">
+            <h1 class="title">Hi. Welcome to this thing.</h1>
+          </div>
+        </div>
         {{!-- <p class="title is-1">Hannah Swift</p>
         <p class="subtitle is-3">Web Developer</p> --}}
+      </div>
       </div>
     </div>
   </section>
@@ -72,32 +84,27 @@
     <div class="container">
       <div class="level">
         <div class="card shadow">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
-            </figure>
-          </div>
+          <a href="https://hs-puppies.surge.sh">
+            <div class="card-image">
+              <figure class="image is-3by3">
+                <img src="image/puppies.png" alt="puppy image">
+              </figure>
+            </div>
+          </a>
           <div class="card-content">
             <div class="media">
-              {{!-- <div class="media-left">
-        <figure class="image is-32x32">
-          <img src="http://placehold.it/64x64" alt="Image">
-        </figure>
-      </div> --}}
               <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
+                <p class="title is-5">Puppy Adoption Site</p>
+                <p class="subtitle is-6">Built with Vanilla JavaScript</p>
               </div>
             </div>
-
             <div class="content">
-              <p>View project</p>
-              <p>View source code</p>
-              {{!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
-      <br>
-      <small>11:09 PM - 1 Jan 2016</small> --}}
+              <a href="https://hs-puppies.surge.sh">
+                <p>PROJECT</p>
+              </a>
+              <a href="https://github.com/hannahgswift/15-puppy-adoption/tree/master">
+                <p>CODE</p>
+              </a>
             </div>
           </div>
         </div>
@@ -264,10 +271,11 @@
   </div>
   <div class="section">
     <div class="container">
-      <div class="content">
+      <div class="content about-content">
         <p class="about-me">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores architecto molestiae, eligendi itaque ducimus iure quam deserunt ratione mollitia nobis, libero, corporis obcaecati. Nulla error qui dolore exercitationem, maxime, iusto.
-          {{!-- Hi, I'm Hannah. I was born and raised in Clarksville, TN. Recently, I've called the Rocky Mountains of Colorado and the Himalayas of northern India home. Since graduating college, I've done everything from freelance photography, nannying, healthcare registration, and content creation for non-profits. I'm a graduate of The Iron Yard's Front-End Web Development program, and I am uber excited to begin my career as a software developer. --}}
+          I’m a web developer in Nashville, TN who appreciates clean and simple web design. I enjoy creating fast, responsive, user-friendly websites and applications in collaborative environments.
+          <br> When I’m not <a href="https://github.com/hannahgswift?tab=activity">coding</a> or taking <a href="http://www.hannahswift.com/">photos</a>, you can find me <a href="http://www.hannahswift.com/#/monument-valley/">trail running</a>, watching reruns
+          of The Office, or making obscure Jurassic Park references.
         </p>
       </div>
     </div>
@@ -284,33 +292,55 @@
           <div class="tile">
             <div class="tile is-parent is-vertical">
               <article class="tile is-child notification is-primary shadow">
-                <p class="title">Education</p>
-                <p>The Iron Yard - Nashville, TN</p>
-                <p>Front-End Web Development</p>
-                <p>Graduated September 2016</p>
-                <br>
-                <p>Austin Peay State University - Clarksville, TN</p>
-                <p>B.S. Public Relations</p>
-                <p>Graduated December 2013</p>
+                <span class="resume">
+                  <p class="title bold">Education</p>
+                  <p class="bold">
+                    Front-End Web Development
+                    <br>
+                    The Iron Yard
+                    <br>
+                    Nashville, TN
+                    <br>
+                    Graduated September 2016
+                  </p>
+                  <br>
+                  <p class="bold">
+                    B.S. Communication: Public Relations
+                    <br>
+                    Austin Peay State University
+                    <br>
+                    Clarksville, TN
+                    <br>
+                    Graduated December 2013
+                  </p>
+                </span>
               </article>
               <article class="tile is-child notification is-warning shadow">
-                <p class="title">...tiles</p>
-                <p class="subtitle">Bottom tile</p>
+                <p class="title bold">Contact</p>
+                <p class="bold">931-206-9405</p>
+                <p class="bold">hannahgswift@gmail.com</p>
               </article>
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification is-info shadow">
-                <p class="title">Skills</p>
-                <p>HTML & CSS</p>
-                <p>JavaScript</p>
-                <p>Git</p>
-                <p>Ember</p>
-                <p>Materialize</p>
-                <p>Bulma</p>
+                <p class="title bold">Web Dev Skills</p>
+                <p class="bold">
+                  HTML & CSS
+                  <br> JavaScript
+                  <br> Git & GitHub
+                  <br> Ember.js
+                  <br> Node.js & NPM
+                  <br> Test Driven Development
+                  <br> Object Oriented Programming
+                  <br> CSS Frameworks: Materialize & Bulma
+                  <br> SASS
+                </p>
                 <br>
-                <p class="subtitle">Also familiar with:</p>
-                <p>Adonis</p>
-                <p>etc</p>
+                <p class="subtitle bold">Also familiar with:</p>
+                <p class="bold">
+                  Adonis.js
+                  <br> React.js
+                </p>
                 {{!-- <figure class="image is-4by3">
             <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w">
           </figure> --}}
@@ -319,10 +349,33 @@
           </div>
           <div class="tile is-parent">
             <article class="tile is-child notification is-danger shadow">
-              <p class="title">Wide tile</p>
-              <p class="subtitle">Aligned with the right tile</p>
-              <div class="content">
-                <!-- Content -->
+              <p class="title bold">Experience</p>
+              <div class="content experience">
+                <p class="bold">
+                  Freelance Photographer
+                  <br>
+                  <a href="http://www.hannahswift.com">Hannah Swift Photography</a>
+                  <br>
+                  <br> Fun Company Site Assistant
+                  <br> YMCA Middle Tennessee
+                  <br> Clarksville, TN
+                  <br>
+                </p>
+                <p class="bold">
+                  Outpatient Registrar
+                  <br> Gateway Medical Center
+                  <br> Clarksville, TN
+                  <br>
+                  <br> Content Creator
+                  <br> Ashraya Mission
+                  <br> Mussoorie, India
+                  <br>
+                </p>
+                <p class="bold">
+                  Photography Intern
+                  <br> Ashraya Mission
+                  <br> Karnataka, India
+                </p>
               </div>
             </article>
           </div>
@@ -332,20 +385,33 @@
   </div>
   <div class="footer">
     <div class="container">
-      <h1 class="title section-title has-text-centered">Contact</h1>
+      {{!-- <h1 class="title section-title has-text-centered">elsewhere</h1> --}}
       <div class="content has-text-centered">
-        <span class="icon">
+        <a href="https://github.com/hannahgswift">
+          <span class="icon">
           <i class="fa fa-github"></i>
         </span>
-        <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-        <span class="icon">
+        </a>
+        <a href="https://www.linkedin.com/in/hannahgswift">
+          <span class="icon">
           <i class="fa fa-linkedin"></i>
         </span>
-        <span class="icon">
-          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="mailto:hannahgswift@gmail.com">
+          <span class="icon">
+          <i class="fa fa-envelope-o"></i>
         </span>
+        </a>
+        <a href="https://twitter.com/HannahGSwift">
+          <span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+        </a>
+        <a href="https://www.instagram.com/hannahgraceswift/">
+          <span class="icon">
+            <i class="fa fa-instagram"></i>
+          </span>
+        </a>
       </div>
     </div>
   </div>

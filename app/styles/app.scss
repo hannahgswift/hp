@@ -4,13 +4,14 @@ $light-mav: #ededed;
 .nav {
   align-items: center;
   padding: 0 1rem;
-  background: $light-mav;
+  // background: $light-mav;
   position: fixed;
   width: 100%;
 }
 body {
   background: $light-mav;
 }
+
 .container,
 .footer,
 .section {
@@ -20,25 +21,19 @@ body {
   justify-content: space-around;
   margin-top: 3rem;
 }
-// .site-title {
-//   padding: 0;
-//   margin: 0;
-// }
 .button {
   margin-left: 1rem;
   padding: 0;
   background: transparent;
   border: none;
 }
-.section {
-  background-color: success;
-}
 .hero {
-  padding-top: 10rem;
+  // padding-top: 10rem;
 }
-// .hero-body {
-//   background: url('http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w') no-repeat center center;
-//   background-size: cover;
+.hero-body {
+  height: 100vh;
+  // background: url('http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w') no-repeat center center;
+  // background-size: cover;
 //   height: 100vh;
 //   &:before {
 //     content: '';
@@ -47,13 +42,13 @@ body {
 //     right: 0;
 //     bottom: 0;
 //     left: 0;
-//     // background-image: linear-gradient(to bottom right,#002f4b,gray);
+//     // background-image: linear-gradient(to bottom right,#002f4b,yellow);
 //     opacity: 0.8;
 //   }
-// }
-// .app {
-//   background: #e9dddd;
-// }
+}
+.app {
+  background: #e9dddd;
+}
 .giant {
   font-size: 5rem;
   font-weight: bold;
@@ -75,7 +70,7 @@ h1 {
   justify-content: center;
 }
 .icon {
-  color: gray;
+  color: hotpink;
   font-size: 3rem;
   margin: 1rem;
 }
@@ -87,28 +82,44 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+.bold {
+  font-weight: bold;
+}
 .section-title {
   font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
-  // color: $good-green;
-  // text-shadow: 0.2rem 0.2rem hotpink;
   color: hotpink;
-  // text-shadow:
-  //   0 1px 0px $orange,
-  //   1px 0 0px $orange,
-  //   1px 2px 0px $orange,
-  //   2px 1px 0px $orange,
-  //   2px 3px 0px $orange,
-  //   3px 2px 0px $orange,
-  //   3px 4px 0px $orange,
-  //   4px 3px 0px $orange,
-  //   4px 5px 0px $orange,
-  //   5px 4px 0px $orange,
-  //   5px 6px 0px $orange,
-  // 6px 5px 0px hotpink,
-  // 6px 7px 0px hotpink,
-  // 7px 6px 0px hotpink,
-  // 7px 8px 0px hotpink,
-  // 5px 7px 0px hotpink;
+}
+
+.footer a:not(.icon) {
+  border: 0;
+  outline: 0;
+  border-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+.content a:not(.button) {
+  border: 0;
+  outline: 0;
+  border-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+.experience {
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+figure .image {
+  width: 3rem;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
