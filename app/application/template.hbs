@@ -1,27 +1,17 @@
 <div class="app">
-  <div class="header">
+  <div class="header" id="menu">
     <nav class="nav">
       <div class="nav-left">
-        <a class="nav-item is-brand content" href="#">
+        <a class="nav-item content" href="#">
           <h1 class="title site-title">Hannah Swift</h1>
         </a>
       </div>
 
       <div class="nav-center">
-        <a class="nav-item" href="#">
-          <span class="icon">
-        {{!-- <i class="fa fa-github"></i> --}}
-      </span>
-        </a>
-        <a class="nav-item" href="#">
-          <span class="icon">
-        {{!-- <i class="fa fa-twitter"></i> --}}
-      </span>
-        </a>
       </div>
 
       <span class="nav-toggle">
-    <span></span>
+      <span></span>
       <span></span>
       <span></span>
       </span>
@@ -31,27 +21,14 @@
           home
         </a>
         <a class="nav-item button is-medium" href="#">
+          about
+        </a>
+        <a class="nav-item button is-medium" href="#2">
           code
         </a>
         <a class="nav-item button is-medium" href="#">
-          about
-        </a>
-        <a class="nav-item button is-medium" href="#">
           contact
-        </a>{{!-- <span class="nav-item">
-      <a class="button" >
-        <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-        <span>Tweet</span>
-      </a>
-      <a class="button is-primary" href="#">
-        <span class="icon">
-          <i class="fa fa-download"></i>
-        </span>
-        <span>Download</span>
-      </a>
-    </span> --}}
+        </a>
       </div>
     </nav>
   </div>
@@ -59,214 +36,26 @@
     <div class="hero-body">
       <div class="container has-text-centered">
       <div class="row">
-        <div class="columns">
+        <div class="columns hero-columns">
           <div class="content column is-one-third">
-            <figure class="image is-square">
+            <figure class="image my-face">
               <img src="image/DSC_1778.jpg" alt="">
             </figure>
           </div>
           <div class="column is-two-tirds">
-            <h1 class="title">Hi. Welcome to this thing.</h1>
+            <h1 class="intro">Hi, I'm Hannah. <br>A creative who likes to tinker with the web.</h1>
           </div>
         </div>
-        {{!-- <p class="title is-1">Hannah Swift</p>
-        <p class="subtitle is-3">Web Developer</p> --}}
+      </div>
+      <div class="row">
+        <i class="fa fa-angle-double-down"></i>
       </div>
       </div>
     </div>
   </section>
   <div class="level">
     <div class="level-item has-text-centered">
-      <h1 class="title section-title">My Projects</h1>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container">
-      <div class="level">
-        <div class="card shadow">
-          <a href="https://hs-puppies.surge.sh">
-            <div class="card-image">
-              <figure class="image is-3by3">
-                <img src="image/puppies.png" alt="puppy image">
-              </figure>
-            </div>
-          </a>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-5">Puppy Adoption Site</p>
-                <p class="subtitle is-6">Built with Vanilla JavaScript</p>
-              </div>
-            </div>
-            <div class="content">
-              <a href="https://hs-puppies.surge.sh">
-                <p>PROJECT</p>
-              </a>
-              <a href="https://github.com/hannahgswift/15-puppy-adoption/tree/master">
-                <p>CODE</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="card shadow">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              {{!-- <div class="media-left">
-        <figure class="image is-32x32">
-          <img src="http://placehold.it/64x64" alt="Image">
-        </figure>
-      </div> --}}
-              <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <p>View Project</p>
-              <p>View source code</p>
-              {{!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
-      <br>
-      <small>11:09 PM - 1 Jan 2016</small> --}}
-            </div>
-          </div>
-        </div>
-        <div class="card shadow">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              {{!-- <div class="media-left">
-        <figure class="image is-32x32">
-          <img src="http://placehold.it/64x64" alt="Image">
-        </figure>
-      </div> --}}
-              <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <p>View Project</p>
-              <p>View source code</p>
-              {{!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
-      <br>
-      <small>11:09 PM - 1 Jan 2016</small> --}}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="level">
-        <div class="card shadow">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              {{!-- <div class="media-left">
-          <figure class="image is-32x32">
-            <img src="http://placehold.it/64x64" alt="Image">
-          </figure>
-        </div> --}}
-              <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <p>View Project</p>
-              <p>View source code</p>
-              {{!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>.
-        <a href="#">#css</a> <a href="#">#responsive</a>
-        <br>
-        <small>11:09 PM - 1 Jan 2016</small> --}}
-            </div>
-          </div>
-        </div>
-        <div class="card shadow">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              {{!-- <div class="media-left">
-          <figure class="image is-32x32">
-            <img src="http://placehold.it/64x64" alt="Image">
-          </figure>
-        </div> --}}
-              <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <p>View Project</p>
-              <p>View source code</p>
-              {{!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>.
-        <a href="#">#css</a> <a href="#">#responsive</a>
-        <br>
-        <small>11:09 PM - 1 Jan 2016</small> --}}
-            </div>
-          </div>
-        </div>
-        <div class="card shadow">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              {{!-- <div class="media-left">
-          <figure class="image is-32x32">
-            <img src="http://placehold.it/64x64" alt="Image">
-          </figure>
-        </div> --}}
-              <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
-              </div>
-            </div>
-
-            <div class="content">
-              <p>View Project</p>
-              <p>View source code</p>
-              {{!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a href="#">@bulmaio</a>.
-        <a href="#">#css</a> <a href="#">#responsive</a>
-        <br>
-        <small>11:09 PM - 1 Jan 2016</small> --}}
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="level">
-    <div class="level-item has-text-centered">
-      <h1 class="title section-title">About</h1>
+      <h1 class="title section-title">The short of it</h1>
     </div>
   </div>
   <div class="section">
@@ -274,9 +63,117 @@
       <div class="content about-content">
         <p class="about-me">
           I’m a web developer in Nashville, TN who appreciates clean and simple web design. I enjoy creating fast, responsive, user-friendly websites and applications in collaborative environments.
+          <br>
+          <br> I recently graduated from The Iron Yard's three month immersive coding program where I learned new and innovative ways to build products that deliver great user experiences. I've got HTML & CSS, JavaScript and other modern client-side frameworks in my tool belt. You can see more of my skills in my resume below.
+          <br>
           <br> When I’m not <a href="https://github.com/hannahgswift?tab=activity">coding</a> or taking <a href="http://www.hannahswift.com/">photos</a>, you can find me <a href="http://www.hannahswift.com/#/monument-valley/">trail running</a>, watching reruns
           of The Office, or making obscure Jurassic Park references.
         </p>
+      </div>
+    </div>
+  </div>
+  <div class="level">
+    <div class="level-item has-text-centered">
+      <h1 class="title section-title">Projects</h1>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="card__container">
+        <div class="card">
+          <a href="https://hs-puppies.surge.sh">
+            <div class="card-image">
+              <figure class="image is-4by2">
+                <img src="image/puppies.png" alt="puppy image">
+              </figure>
+            </div>
+          </a>
+          <div class="card-content">
+            <div class="media card-content__top">
+              <div class="media-content">
+                <p class="card-title is-5">Puppy Adoption Site</p>
+                <p class="card-subtitle is-6">Built with Vanilla JavaScript</p>
+              </div>
+            </div>
+            <div class="content card-content__bottom">
+              <a href="https://hs-puppies.surge.sh">
+                <p class="card-subsub">Project</p>
+              </a>
+              <a href="https://github.com/hannahgswift/15-puppy-adoption/tree/master">
+                <p class="card-subsub">Code</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <a href="http://hs-runtimer.surge.sh/">
+          <div class="card-image">
+            <figure class="image is-4by2">
+              <img src="image/runtimer.png" alt="">
+            </figure>
+          </div>
+          </a>
+          <div class="card-content">
+            <div class="media card-content__top">
+              <div class="media-content">
+                <p class="card-title is-5">Run Timer</p>
+                <p class="card-subtitle is-6">Built with SASS + Ember.js</p>
+              </div>
+            </div>
+
+            <div class="content card-content__bottom">
+              <a href="http://hs-runtimer.surge.sh/">
+                <p class="card-subsub">Project</p>
+              </a>
+              <a href="https://github.com/hannahgswift/19-run-timer/tree/develop">
+                <p class="card-subsub">Code</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card__container card__container-b">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">Project Title</p>
+                <p class="subtitle is-6">Built with yada yada</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>View Project</p>
+              <p>View source code</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-5">Project Title</p>
+                <p class="subtitle is-6">Built with yada yada</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>View Project</p>
+              <p>View source code</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -286,7 +183,7 @@
     </div>
   </div>
   <div class="section">
-    <div class="container">
+    <div class="">
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">
           <div class="tile">
@@ -341,9 +238,6 @@
                   Adonis.js
                   <br> React.js
                 </p>
-                {{!-- <figure class="image is-4by3">
-            <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w">
-          </figure> --}}
               </article>
             </div>
           </div>
@@ -385,7 +279,6 @@
   </div>
   <div class="footer">
     <div class="container">
-      {{!-- <h1 class="title section-title has-text-centered">elsewhere</h1> --}}
       <div class="content has-text-centered">
         <a href="https://github.com/hannahgswift">
           <span class="icon">

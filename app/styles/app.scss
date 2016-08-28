@@ -1,15 +1,82 @@
 $good-green: #009f77;
 $light-mav: #ededed;
+$black: #212121;
+$cherry: #ff5252;
+$gray-light: #bababa;
+$gray: #999999;
+$gray-dark: #757575;
 @import "bulma";
-.nav {
-  align-items: center;
-  padding: 0 1rem;
-  // background: $light-mav;
-  position: fixed;
-  width: 100%;
-}
+
 body {
-  background: $light-mav;
+  margin: 0;
+  font-family: 'Lora', serif;
+  color: $black;
+  background: #fff;
+}
+
+#menu {
+  padding: 0 2rem;
+  width: 100%;
+  box-shadow: 0 0.05rem 0.3rem 0 $gray;
+  position: fixed;
+  display: none;
+  z-index: 999;
+
+  .nav {
+    align-items: center;
+  }
+}
+
+.content {
+  h1 {
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    color: $cherry;
+  }
+}
+
+.button {
+  margin-left: 1rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.nav-menu {
+  a  {
+    font-family: 'Lora', serif;
+    color: $gray-dark;
+    text-transform: uppercase;
+    &:hover {
+      color: $cherry;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-body {
+  height: 100vh;
+  background: #fff;
+  color: $cherry;
+}
+
+.intro {
+  text-align: left;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0.6rem;
+  text-transform: lowercase;
+  color: $cherry;
+  margin-left: 2rem;
+  font-size: 2rem;
 }
 
 .container,
@@ -17,79 +84,97 @@ body {
 .section {
   background: transparent;
 }
+
 .level {
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 3rem;
 }
-.button {
-  margin-left: 1rem;
-  padding: 0;
-  background: transparent;
-  border: none;
-}
-.hero {
-  // padding-top: 10rem;
-}
-.hero-body {
-  height: 100vh;
-  // background: url('http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w') no-repeat center center;
-  // background-size: cover;
-//   height: 100vh;
-//   &:before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     // background-image: linear-gradient(to bottom right,#002f4b,yellow);
-//     opacity: 0.8;
-//   }
-}
-.app {
-  background: #e9dddd;
-}
-.giant {
-  font-size: 5rem;
-  font-weight: bold;
-  color: gray;
-  text-shadow: 0.3rem 0.3rem purple;
-}
-.card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-h1 {
-  margin: 1rem auto;
-}
-.shadow {
-  box-shadow: 0.5rem 0.5rem gray;
-}
+
+
 .is-ancestor {
   justify-content: center;
 }
+
 .icon {
-  color: hotpink;
+  color: $cherry;
   font-size: 3rem;
   margin: 1rem;
 }
+
 .tile {
   border-radius: 0;
 }
-.about-me {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
+
 .bold {
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
 }
-.section-title {
-  font-size: 5rem;
-  font-weight: bold;
+
+.about-me {
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  color: hotpink;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.section-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  color: $cherry;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.7rem;
+}
+
+/***** Card Styles *****/
+
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &-b {
+    margin-top: 5rem;
+  }
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: lowercase;
+  padding: 0.5rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.card-content__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-subsub {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid $cherry;
+  color: $cherry;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.1rem;
+  &:hover {
+    color: white;
+    background: $cherry;
+  }
 }
 
 .footer a:not(.icon) {
@@ -116,10 +201,32 @@ p {
   font-size: 1.2rem;
 }
 
+.hero-columns {
+  align-items: center;
+}
+
 figure .image {
   width: 3rem;
+
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+.my-face {
+  img {
+    border-radius: 100%;
+  }
+}
+
+.container {
+  width: 65%;
+}
+
+.row {
+  .fa-angle-double-down {
+    font-size: 3rem;
+    font-weight: 300;
   }
 }
