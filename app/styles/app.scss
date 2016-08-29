@@ -49,7 +49,7 @@ body {
   a  {
     font-family: 'Lora', serif;
     color: $gray-dark;
-    text-transform: uppercase;
+    text-transform: lowercase;
     &:hover {
       color: $cherry;
     }
@@ -113,10 +113,9 @@ body {
 
 .about-me {
   line-height: 2rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+  letter-spacing: 0.25rem;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .section-title {
