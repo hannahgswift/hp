@@ -1,12 +1,14 @@
-$good-green: #009f77;
+@import "bulma";
+
 $light-mav: #ededed;
 $black: #212121;
 $cherry: #ff5252;
-// $cherry: #f7484e;
+$zinger: #e3fe3d;
+$blue: #4ac6e7;
+
 $gray-light: #bababa;
 $gray: #999999;
 $gray-dark: #757575;
-@import "bulma";
 
 body {
   margin: 0;
@@ -15,6 +17,10 @@ body {
   background: #fff;
 }
 
+.header {
+  width: 100%;
+  background: #fff;
+}
 #menu {
   padding: 0 2rem;
   width: 100%;
@@ -57,19 +63,42 @@ body {
   }
 }
 
+.beans {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-content: center;
+
 }
 
 .hero-body {
-  height: 100vh;
   background: #fff;
-  color: $cherry;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.my-face {
+  img {
+    border-radius: 100%;
+  }
+}
+
+.hero__container {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .intro {
+  align-self: center;
   text-align: left;
   font-weight: 700;
   line-height: 4rem;
@@ -78,6 +107,30 @@ body {
   color: $cherry;
   margin-left: 2rem;
   font-size: 2rem;
+}
+
+.little-nav {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: $cherry;
+    border: none;
+    &:hover {
+      color: $blue;
+      background: $zinger;
+    }
+  }
 }
 
 .container,
@@ -112,11 +165,17 @@ body {
   line-height: 2rem;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
 .about-me {
-  line-height: 2rem;
-  letter-spacing: 0.25rem;
-  font-weight: bold;
-  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.15rem;
+  font-size: 1.5rem;
 }
 
 .section-title {
@@ -127,6 +186,13 @@ body {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.7rem;
+  transition: color 300ms ease-out, letter-spacing 300ms ease-out, text-shadow ease-out 300ms;
+  &:hover {
+    letter-spacing: 0.5rem;
+    color: $blue;
+    text-shadow: 0.2rem 0.1rem 0.2rem $zinger;
+    transition: color 300ms ease-in, letter-spacing 300ms ease-in, text-shadow ease-in 300ms;
+  }
 }
 
 /***** Card Styles *****/
@@ -175,21 +241,14 @@ body {
     color: white;
     background: $cherry;
   }
+  &:hover {
+    color: $blue;
+    background: $zinger;
+    border: 1px solid $zinger;
+  }
+
 }
 
-.footer a:not(.icon) {
-  border: 0;
-  outline: 0;
-  border-bottom: 0;
-  border-bottom-color: transparent;
-}
-
-.content a:not(.button) {
-  border: 0;
-  outline: 0;
-  border-bottom: 0;
-  border-bottom-color: transparent;
-}
 
 .experience {
   display: flex;
@@ -214,19 +273,40 @@ figure .image {
   }
 }
 
-.my-face {
-  img {
-    border-radius: 100%;
-  }
-}
-
 .container {
-  width: 65%;
+  width: 75%;
 }
 
 .row {
   .fa-angle-double-down {
     font-size: 3rem;
     font-weight: 300;
+  }
+}
+
+.footer a:not(.icon) {
+  border: 0;
+  outline: 0;
+  border-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+.content a:not(.button) {
+  border: 0;
+  outline: 0;
+  border-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+.icon {
+  .fa {
+    color: $cherry;
+    transition: font-size 200ms ease-out, color 200ms ease-out, text-shadow 200ms ease-out;
+    &:hover {
+      font-size: 3.7rem;
+      color: $blue;
+      text-shadow: 0.1rem 0.1rem $zinger;
+      transition: font-size 200ms ease-in, color 200ms ease-in, text-shadow 200ms ease-in;
+    }
   }
 }

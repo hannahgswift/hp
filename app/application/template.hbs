@@ -34,12 +34,12 @@
   </div>
   <section class="hero is-info is-large is-bold is-primary has-text-centered">
     <div class="hero-body">
-      <div class="container has-text-centered">
+      <div class="hero__container has-text-centered">
       <div class="row">
         <div class="columns hero-columns">
           <div class="content column is-one-third">
             <figure class="image my-face">
-              <img src="image/DSC_1778.jpg" alt="">
+              <img src="assets/image/DSC_1778.jpg" alt="">
             </figure>
           </div>
           <div class="column is-two-tirds">
@@ -47,8 +47,16 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <i class="fa fa-angle-double-down"></i>
+      <div class="row little-nav">
+        <a class="card-subsub" href="#about">
+          about
+        </a>
+        <a class="card-subsub" href="#code">
+          code
+        </a>
+        <a class="card-subsub" href="#contact">
+          contact
+        </a>
       </div>
       </div>
     </div>
@@ -84,7 +92,7 @@
           <a href="https://hs-puppies.surge.sh">
             <div class="card-image">
               <figure class="image is-4by2">
-                <img src="image/puppies.png" alt="puppy image">
+                <img src="assets/image/puppies.png" alt="puppy image">
               </figure>
             </div>
           </a>
@@ -109,7 +117,7 @@
           <a href="http://hs-runtimer.surge.sh/">
           <div class="card-image">
             <figure class="image is-4by2">
-              <img src="image/runtimer.png" alt="">
+              <img src="assets/image/runtimer.png" alt="">
             </figure>
           </div>
           </a>
@@ -136,27 +144,31 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
+              <img src="assets/image/breweries.png" alt="">
             </figure>
           </div>
           <div class="card-content">
-            <div class="media">
+            <div class="media card-content__top">
               <div class="media-content">
-                <p class="title is-5">Project Title</p>
-                <p class="subtitle is-6">Built with yada yada</p>
+                <p class="card-title is-5">Brewery List</p>
+                <p class="card-subtitle is-6">Built with SASS + Ember.js</p>
               </div>
             </div>
 
-            <div class="content">
-              <p>View Project</p>
-              <p>View source code</p>
+            <div class="content card-content__bottom">
+              <a href="http://hs-brewerylist.surge.sh/">
+                <p class="card-subsub">Project</p>
+              </a>
+              <a href="https://github.com/hannahgswift/17-brewery-list/tree/develop">
+                <p class="card-subsub">Code</p>
+              </a>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="http://static1.squarespace.com/static/5160f38ee4b0f29c92630ca9/566c7649a976afcb5483353c/566c764fa976afcb54833577/1449948754176/R1-05369-0011.jpg?format=1500w" alt="">
+              <img src="image/breweries.png" alt="">
             </figure>
           </div>
           <div class="card-content">
@@ -177,6 +189,7 @@
       </div>
     </div>
   </div>
+
   <div class="level">
     <div class="level-item has-text-centered">
       <h1 class="title section-title">Resume</h1>
@@ -259,7 +272,7 @@
                 </p>
                 <p class="bold">
                   Outpatient Registrar
-                  <br> Gateway Medical Center
+                  <br> Gateway Medical
                   <br> Clarksville, TN
                   <br>
                   <br> Content Creator
