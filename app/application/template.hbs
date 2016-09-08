@@ -17,10 +17,6 @@
       </span>
 
       <div class="nav-right nav-menu">
-        {{#scroll-to href='#' class="nav-item button is-medium"}}
-          home
-        {{/scroll-to}}
-
         {{#scroll-to href='#about' class="nav-item button is-medium"}}
           about
         {{/scroll-to}}
@@ -29,8 +25,12 @@
           code
         {{/scroll-to}}
 
+        {{#scroll-to href='#resume' class="nav-item button is-medium"}}
+          resume
+        {{/scroll-to}}
+
         {{#scroll-to href='#contact' class="nav-item button is-medium"}}
-          contant
+        contact
         {{/scroll-to}}
       </div>
     </nav>
@@ -51,15 +51,9 @@
           </div>
         </div>
         <div class="row little-nav">
-          <a class="card-subsub" href="#about">
-                about
-              </a>
-          <a class="card-subsub" href="#code">
-                code
-              </a>
-          <a class="card-subsub" href="#contact">
-                contact
-              </a>
+          {{#scroll-to href='#contact' class="card-subsub"}}
+            contact
+          {{/scroll-to}}
         </div>
       </div>
     </div>
@@ -76,7 +70,7 @@
           I’m a web developer in Nashville, TN who appreciates clean and simple web design. I enjoy creating fast, responsive, user-friendly websites and applications in collaborative environments.
           <br>
           <br> I recently graduated from The Iron Yard's three month immersive coding program where I learned new and innovative ways to build products that deliver great user experiences. I've got HTML & CSS, JavaScript and other modern client-side frameworks
-          in my tool belt. You can see more of my skills in my resume below.
+          in my tool belt. You can see more of my skills in my resume below, or click <a href="assets/image/resume.pdf">here</a> for the downloadable version.
           <br>
           <br> When I’m not <a href="https://github.com/hannahgswift?tab=activity">coding</a> or taking <a href="http://www.hannahswift.com/portfolio">photos</a>, you can find me <a href="http://www.hannahswift.com/#/monument-valley/">trail running</a>          or watching reruns of The Office.
         </p>
@@ -199,9 +193,11 @@
     </div>
   </div>
 
-  <div class="level">
+  <div class="level" id="resume">
     <div class="level-item has-text-centered">
       <h1 class="title section-title">Resume</h1>
+      <br>
+      <p>Click <a href="assets/image/resume.pdf" target="_blank">here</a> for the PDF version.</p>
     </div>
   </div>
   <div class="section">
@@ -214,7 +210,7 @@
                 <span class="resume">
                   <p class="title bold">Education</p>
                   <p class="bold">
-                    Front-End Web Development
+                    Front-End Engineering
                     <br>
                     The Iron Yard
                     <br>
@@ -244,21 +240,22 @@
               <article class="tile is-child notification is-info shadow">
                 <p class="title bold">Web Dev Skills</p>
                 <p class="bold">
-                  HTML & CSS
+                  HTML
+                  <br> CSS
+                  <br> SASS
                   <br> JavaScript
                   <br> Git & GitHub
                   <br> Ember.js
                   <br> Node.js & NPM
-                  <br> Test Driven Development
                   <br> Object Oriented Programming
                   <br> CSS Frameworks: Materialize & Bulma
-                  <br> SASS
                 </p>
                 <br>
                 <p class="subtitle bold">Also familiar with:</p>
                 <p class="bold">
                   Adonis.js
                   <br> React.js
+                  <br> Test Driven Development
                 </p>
               </article>
             </div>
@@ -270,7 +267,7 @@
                 <p class="bold">
                   Freelance Photographer
                   <br>
-                  <a href="http://www.hannahswift.com">Hannah Swift Photography</a>
+                  <a href="http://www.hannahswift.com/portfolio">Hannah Swift Photography</a>
                   <br> Nashville, TN
                   <br>
                   <br> Fun Company Site Assistant
