@@ -1,11 +1,9 @@
 @import "bulma";
-
 $light-mav: #ededed;
 $black: #212121;
 $cherry: #ff5252;
 $zinger: #e3fe3d;
 $blue: #4ac6e7;
-
 $gray-light: #bababa;
 $gray: #999999;
 $gray-dark: #757575;
@@ -21,6 +19,7 @@ body {
   width: 100%;
   background: #fff;
 }
+
 #menu {
   padding: 0 2rem;
   width: 100%;
@@ -53,10 +52,11 @@ body {
 }
 
 .nav-menu {
-  a  {
+  a {
     font-family: 'Lora', serif;
     color: $gray-dark;
     text-transform: lowercase;
+
     &:hover {
       color: $cherry;
     }
@@ -73,7 +73,6 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-
 }
 
 .hero-body {
@@ -114,21 +113,21 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
+
   a {
     font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-size: 1rem;
     text-transform: lowercase;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    text-decoration: none;
+    border: 1px solid $cherry;
     color: $cherry;
-    border: none;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+
     &:hover {
-      color: $blue;
-      background: $zinger;
+      color: #fff;
+      background: $cherry;
     }
   }
 }
@@ -138,12 +137,14 @@ body {
 .section {
   background: transparent;
 }
+.container {
+  margin: auto;
+}
 
 .level {
   justify-content: center;
   margin-top: 3rem;
 }
-
 
 .is-ancestor {
   justify-content: center;
@@ -186,22 +187,15 @@ body {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.7rem;
-  transition: color 300ms ease-out, letter-spacing 300ms ease-out, text-shadow ease-out 300ms;
-  &:hover {
-    letter-spacing: 0.5rem;
-    color: $blue;
-    text-shadow: 0.2rem 0.1rem 0.2rem $zinger;
-    transition: color 300ms ease-in, letter-spacing 300ms ease-in, text-shadow ease-in 300ms;
-  }
 }
 
 /***** Card Styles *****/
-
 .card__container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
   &-b {
     margin-top: 5rem;
   }
@@ -237,18 +231,12 @@ body {
   color: $cherry;
   padding: 1rem 1.5rem;
   letter-spacing: 0.1rem;
+
   &:hover {
-    color: white;
+    color: #fff;
     background: $cherry;
   }
-  &:hover {
-    color: $blue;
-    background: $zinger;
-    border: 1px solid $zinger;
-  }
-
 }
-
 
 .experience {
   display: flex;
@@ -301,12 +289,11 @@ figure .image {
 .icon {
   .fa {
     color: $cherry;
-    transition: font-size 200ms ease-out, color 200ms ease-out, text-shadow 200ms ease-out;
+    transition: color 300ms ease-out;
+
     &:hover {
-      font-size: 3.7rem;
-      color: $blue;
-      text-shadow: 0.1rem 0.1rem $zinger;
-      transition: font-size 200ms ease-in, color 200ms ease-in, text-shadow 200ms ease-in;
+      color: lighten($cherry, 10%);
+      transition: color 300ms ease-in;
     }
   }
 }
