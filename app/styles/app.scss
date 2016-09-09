@@ -18,12 +18,13 @@ body {
 .header {
   width: 100%;
   background: #fff;
+  opacity: 0.9;
 }
 
 #menu {
   padding: 0 2rem;
   width: 100%;
-  box-shadow: 0 0.05rem 0.3rem 0 $gray;
+  box-shadow: 0 0.05rem 0.2rem 0 lightgray;
   position: fixed;
   display: none;
   z-index: 999;
@@ -41,6 +42,13 @@ body {
     letter-spacing: 0.5rem;
     font-weight: bold;
     color: $cherry;
+    transition: color 200ms ease-out;
+
+    &:hover {
+      color: lighten($cherry, 10%);
+      transition: color 200ms ease-in;
+    }
+
   }
 }
 
@@ -56,30 +64,44 @@ body {
     font-family: 'Lora', serif;
     color: $gray-dark;
     text-transform: lowercase;
+    transition: color 200ms ease-out;
 
     &:hover {
       color: $cherry;
+      transition: color 200ms ease-in;
+    }
+
+  }
+}
+
+
+.hero {
+  .nav {
+    box-shadow: none;
+  }
+}
+
+.nav-item  {
+  .first-contact {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $cherry;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+    transition: color 200ms ease-out;
+
+    &:hover {
+      color: lighten($cherry, 10%);
+      transition: color 200ms ease-in;
     }
   }
 }
 
-.beans {
-  display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
 .hero-body {
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
 }
 
 .my-face {
@@ -89,11 +111,16 @@ body {
 }
 
 .hero__container {
-  width: 65%;
+  max-width: 65%;
+
   margin: auto;
   display: flex;
   flex-direction: column;
   align-content: center;
+  .fa {
+    color: $cherry;
+    font-size: 3rem;
+  }
 }
 
 .intro {
@@ -139,6 +166,7 @@ body {
 }
 .container {
   margin: auto;
+  width: 75%;
 }
 
 .level {
@@ -195,10 +223,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-  &-b {
-    margin-top: 5rem;
-  }
+.card {
+  width: calc(100% / 2.5);
+  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .card-title {
@@ -261,14 +292,17 @@ figure .image {
   }
 }
 
-.container {
-  width: 75%;
-}
-
 .row {
-  .fa-angle-double-down {
+  .fa-angle-down {
     font-size: 3rem;
     font-weight: 300;
+    transition: color 200ms ease-out;
+
+    &:hover {
+      color: lighten($cherry, 10%);
+      transition: color 200ms ease-in;
+    }
+
   }
 }
 
@@ -289,11 +323,41 @@ figure .image {
 .icon {
   .fa {
     color: $cherry;
-    transition: color 300ms ease-out;
+    transition: color 200ms ease-out;
 
     &:hover {
       color: lighten($cherry, 10%);
       transition: color 200ms ease-in;
     }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 980px) {
+  .container {
+    width: 95%;
+  }
+  .card {
+    width: 90%;
+  }
+  .hero__container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  .container {
+    width: 95%;
+  }
+  .card {
+    width: 100%;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__container {
+    max-width: 100%;
+    width: 100%;
   }
 }
