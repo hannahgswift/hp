@@ -1,24 +1,14 @@
 <div class="app" id="home">
   <div class="header" id="menu">
     <nav class="nav">
-      <div class="nav-left">
+      <div class="nav-left is-flex-touch">
         <a class="nav-item content" href="#">
           {{#scroll-to href="#home"}}
           <h1 class="title site-title">Hannah G Swift</h1>
           {{/scroll-to}}
         </a>
       </div>
-
-      <div class="nav-center">
-      </div>
-
-      <span class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-      </span>
-
-      <div class="nav-right nav-menu">
+      <div class="nav-right is-flex-touch">
         {{#scroll-to href='#about' class="nav-item button is-medium" }}
           about
         {{/scroll-to}}
@@ -41,7 +31,7 @@
     <div class="hero-head">
       <div class="nav">
         <div class="container">
-          <div class="nav-right">
+          <div class="nav-center">
             <div class="nav-item">
               {{#scroll-to href='#contact' class="first-contact" }}
                 contact
@@ -63,18 +53,20 @@
             <h1 class="intro">Hi, I'm Hannah. <br>A creative who likes to tinker with the web.</h1>
           </div>
         </div>
-        <div class="row">
-          {{#scroll-to href='#about' }}
-            <i class="fa fa fa-angle-down" aria-hidden="true"></i>
-          {{/scroll-to}}
-        </div>
+      </div>
+    </div>
+    <div class="row hero-foot">
+      <div class="container">
+        {{#scroll-to href='#about' }}
+          <i class="fa fa fa-angle-down" aria-hidden="true"></i>
+        {{/scroll-to}}
       </div>
     </div>
   </section>
   <div class="level" id="about">
     <div class="container">
       <div class="level-item has-text-centered">
-        <h1 class="title section-title">The short of it</h1>
+        <h1 class="title section-title">The short <br class="breaker-breaker"> of it</h1>
       </div>
     </div>
   </div>
