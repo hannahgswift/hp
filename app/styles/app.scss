@@ -311,13 +311,20 @@ figure .image {
     }
   }
 }
+.tile.is-8 {
+  width: 100%;
+}
+
 @media screen and (min-width: 769px) and (max-width: 980px) {
+  .tile.is-8 {
+    width: 100%;
+  }
   .container {
-    width: 95%;
+    width: 100%;
   }
 
   .card {
-    width: 90%;
+    width: 100%;
   }
 
   .hero__container {
@@ -325,7 +332,10 @@ figure .image {
     width: 100%;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .tile.is-8 {
+    width: 100%;
+  }
   .content {
     h1 {
       font-size: 1rem;
