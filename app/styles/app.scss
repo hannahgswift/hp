@@ -246,6 +246,22 @@ body {
   }
 }
 
+.gray-btn {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid gray;
+  color: gray;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.1rem;
+
+  &:hover {
+    color: #fff;
+    background: gray;
+  }
+}
+
 .experience {
   display: flex;
   flex: row;
